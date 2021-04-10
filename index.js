@@ -18,4 +18,4 @@ const readMore = () =>{
         text.style.display = "inline";
         btn1.style.display="none"
       }
-}
+    }
