@@ -61,7 +61,7 @@ section .hero{
     padding-bottom: 4px;   
 }
 
-    span{
+    .headname{
     color: rgb(36, 35, 35);
     font-size: xx-large;
     text-transform: uppercase;
@@ -214,7 +214,7 @@ section .hero{
     text-align: center;
     padding: 60px 20px  ;
     border-radius: 5px;
-}.box1 span{
+}.box1 .spanli{
     background: #ffffff;
     font-size: 19px;
     width: 20px;
@@ -223,6 +223,8 @@ section .hero{
     border-radius: 30px;
     text-align: center;
     margin-top: 5px;
+    color: black;
+
 }.box1  a{
     font-size: 25px;
     margin-top: 20px;
@@ -236,6 +238,8 @@ section .hero{
 }.box1 button{
     margin-top: 25px;
     padding: 0;
+}.box1 .readmore{
+    color: white;
 }.box2{
     background-color: black;
     height: 350px;
@@ -253,6 +257,8 @@ section .hero{
     border-radius: 30px;
     text-align: center;
     margin-top: 5px;
+    color: black;
+
 }.box2 a{
     margin-top: 25px;
     font-size: 25px;
@@ -284,6 +290,8 @@ section .hero{
     border-radius: 30px;
     text-align: center;
     margin-top: 5px;
+    color: black;
+
 }.box3 a{
     margin-top: 25px;
     font-size: 25px;
@@ -296,7 +304,40 @@ section .hero{
 }.box3 button{
     margin-top: 25px;
     padding: 0;
-}.project-info{
+}.box4{
+    background-color: black;
+    height: 350px;
+    width: 25%;
+    text-align: center;
+    padding: 60px 20px  ;
+    border-radius: 5px;
+}.box4 .spanli{
+    background: #ffffff;
+    font-size: 19px;
+    width: 20px;
+    height: 20px;
+    padding: 7px 12px; 
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+}.box4  a{
+    font-size: 25px;
+    margin-top: 20px;
+    color: skyblue;
+    display: block;
+    font-family: cursive;
+
+}.box4 p{
+    margin-top: 8px;
+    color: rgb(221, 219, 219);
+}.box4 button{
+    margin-top: 25px;
+    padding: 0;
+}.box4 .readmore{
+    color: white;
+}
+.project-info{
     margin: 10px auto 10px auto ;
     width: 80%;
     padding-top: 10px;
@@ -308,12 +349,6 @@ section .hero{
 
     padding-left: 10px;
 }
-
-
-
-
-
-
 footer {
     text-align: center;
     height: 220px;
@@ -347,7 +382,7 @@ footer h1{
     padding: 1px 1px;
     color: blue;
 }
-footer span{
+footer .copy-rights{
     font-size: 14px; display: block;
     padding-top: 12px;
     color: rgb(156, 156, 156);
@@ -475,6 +510,7 @@ nav{
 
 }.box1{
     width: auto;
+    }.jsbtn{
     }
 .box2{
     width: auto;
@@ -482,7 +518,9 @@ nav{
 
     }
             
-.box3{
-width: auto;
-}
+    .box3{
+        width: auto;
+    }.box4{
+            width: auto;
+            }
 }

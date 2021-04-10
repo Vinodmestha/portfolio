@@ -1,19 +1,21 @@
-const readMore = () =>{
-
-    let btn1 = document.getElementById('btn').innerHTML= 
-    'Here i\'m created the similar website like facebook-clone. It\'s a self-created website. I amke as soon as possible.' ;
-
-
-    btn=style.None;
-}
-
-
-
-
 const openmenu = () =>{
     document.getElementById('close').style.width="150px";
 }
-
 const closemenu = () =>{
     document.getElementById('close').style.width="0px";
+}
+
+// Read more button
+const readMore = () =>{
+   var dots = document.querySelector("#dots");
+   var text = document.querySelector("#text");
+    let btn1 = document.getElementById('btn'); 
+    if (dots.style.display === "inline") {
+        dots.style.display = "inline";
+        text.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        text.style.display = "inline";
+        btn1.style.display="none"
+      }
 }
