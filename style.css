@@ -45,10 +45,12 @@ section .hero{
     left: 25%;
     display: inline-block;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 
 }button{
     padding: 13px 8px ;
     font-weight:bold;
+
 } .hero .profile-name{
     display: inline-block;
     position: relative;
@@ -85,6 +87,8 @@ section .hero{
     font-size:15px ;
     font-weight: bold;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
 } .profile-name .btn2 {
     padding:15px 43px;
     color:#ffffff;
@@ -94,6 +98,8 @@ section .hero{
     border-radius: 10px;
     border: none;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
 }.hero .img{
     float: right;
     width: 50%;
@@ -147,6 +153,7 @@ section .hero{
     font-size: 12px;
     border-radius: 2px;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 
 
 }.info .btn4{
@@ -159,6 +166,8 @@ section .hero{
     border-radius: 2px;
     text-decoration: none;
     margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }.social-icons{
     right: 0;
     bottom: 0;
@@ -200,20 +209,22 @@ section .hero{
 }#btn::after button{
     display: none;
 }
-
-
-.box{
+.box-1{
     display: flex; color: #ffffff;
-    justify-content: space-between;
     padding-bottom: 40px ;
+    justify-content: space-between;
+    max-width: 100%;
 }
 .box1{
-    background-color: black;
     height: 350px;
     width: 25%;
     text-align: center;
     padding: 60px 20px  ;
     border-radius: 5px;
+    font-family: "Archivo Black", sans-serif;
+    background: black;
+
+
 }.box1 .spanli{
     background: #ffffff;
     font-size: 19px;
@@ -225,13 +236,38 @@ section .hero{
     margin-top: 5px;
     color: black;
 
+}.readmore{
+    padding-top: 15px;
 }.box1  a{
     font-size: 25px;
-    margin-top: 20px;
+    margin: 20px 0 10px 0px;
     color: skyblue;
     display: block;
     font-family: cursive;
+    font-size: 0;
+    line-height: 1.5;
+    text-align: center;
 
+  }
+  .words span {
+    font-size: 25px;
+    display: inline-block;
+    padding-left: 23px;
+    animation: move 3s ease-in-out infinite;
+  }
+  @keyframes move {
+    0% {
+      transform: translate(0%, 5%);
+    }
+    50% {
+      text-shadow: -20px 25px 50px 20px rgba(245, 240, 240, 0.75);
+    }
+    100% {
+      transform: translate(0%, -5%);
+    }
+  }
+  .box1 a:hover{
+    color: rgb(238, 115, 115);
 }.box1 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
@@ -241,14 +277,16 @@ section .hero{
 }.box1 .readmore{
     color: white;
 }.box2{
-    background-color: black;
+    background: black;
     height: 350px;
     width: 25%;
     text-align: center;
     padding: 60px 20px  ;
     border-radius: 5px;
-    margin: 0 10px;
-}.box2 span{
+    font-family: "Archivo Black", sans-serif;
+
+
+}.box2 .spanli{
     background: #ffffff;
     font-size: 19px;
     width: 20px;
@@ -259,13 +297,16 @@ section .hero{
     margin-top: 5px;
     color: black;
 
-}.box2 a{
+} .box2 a{
     margin-top: 25px;
     font-size: 25px;
     color: skyblue;
     display: block;
     font-family: cursive;
+    text-align: center;
 
+}.box2 a:hover{
+    color: rgb(238, 115, 115);
 }.box2 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
@@ -281,7 +322,9 @@ section .hero{
     text-align: center;
     padding: 60px 20px  ;
     border-radius: 5px;
-}.box3 span{
+    font-family: "Archivo Black", sans-serif;
+
+}.box3 .spanli{
     background: #ffffff;
     font-size: 19px;
     width: 20px;
@@ -298,16 +341,24 @@ section .hero{
     display: block;
     color: skyblue;
     font-family: cursive;
+}.box3 a:hover{
+    color: rgb(238, 115, 115);
 }.box3 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
 }.box3 button{
     margin-top: 25px;
     padding: 0;
-}.box4{
+}.box-2{
+    display: flex; color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px ;
+}
+.box4{
     background-color: black;
     height: 350px;
-    width: 25%;
+    width: 100%;
     text-align: center;
     padding: 60px 20px  ;
     border-radius: 5px;
@@ -321,22 +372,23 @@ section .hero{
     text-align: center;
     margin-top: 5px;
     color: black;
-}.box4  a{
-    font-size: 25px;
-    margin-top: 20px;
-    color: skyblue;
-    display: block;
-    font-family: cursive;
 
+}.box4 a{
+    margin-top: 25px;
+    font-size: 25px;
+    display: block;
+    color: skyblue;
+    font-family: cursive;
+}.box4 a:hover{
+    color: rgb(238, 115, 115);
 }.box4 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
 }.box4 button{
     margin-top: 25px;
     padding: 0;
-}.box4 .readmore{
-    color: white;
 }
+
 .project-info{
     margin: 10px auto 10px auto ;
     width: 80%;
@@ -422,9 +474,7 @@ footer .copy-rights{
     display: block;
   }ul li{
       padding:  3px 0;
-
   }
-  
   .side i {
     padding: 4px;
     text-decoration: none;
@@ -502,7 +552,7 @@ nav{
     width: auto;
     margin: 10px;
 }
-.box{
+.box-1{
     display: block;
     align-items: center;
     text-align: center;
@@ -510,17 +560,14 @@ nav{
 
 }.box1{
     width: auto;
-    }.jsbtn{
-    }
+}
 .box2{
     width: auto;
     margin: 10px 0;
-
-    }
-            
-    .box3{
-        width: auto;
-    }.box4{
-            width: auto;
-            }
+}         
+.box3{
+    width: auto;
+}.box4{
+    width: 100%;
+}
 }
