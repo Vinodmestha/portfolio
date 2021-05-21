@@ -2,28 +2,30 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}body{
+    scroll-behavior: smooth;
 }
 header{
     width: 100%;
     height: 70px;
-    background-color: #ffffff;
+    background-color: #1b263b;
     display: flex;
     justify-content: space-around;
     line-height: 70px;
     padding: 0px 5%;
     box-shadow:0px 2px 12px gray;
     position: relative;
+    color: #ffffff;
 }.logo{
     font-size: x-large;
     text-transform: uppercase;
     font-weight: bold;
     font-family: cursive;
-    color: rgb(102, 101, 101);
 }nav ul li{
     list-style: none;
     display:inline-block ;
     padding: 0px 30px;
-    font-size: large;
+    font-size: 17px;
     font-family: sans-serif;    
 }.side i{
     visibility: hidden;
@@ -31,8 +33,8 @@ header{
     display: none;
 } li a{
     text-decoration: none;
-    color: #b4b3b3; 
-
+    color: #ffffff;
+    opacity: 0.7;
 }.bar-icon{
     display: none;
     visibility: hidden;
@@ -40,6 +42,8 @@ header{
 section .hero{
     height: 650px;
     width: 100%;
+    background: #edf2fb;
+
 }.dwnbutton{
     top: 65%;
     left: 25%;
@@ -104,13 +108,15 @@ section .hero{
     float: right;
     width: 50%;
 }
-
+#about{
+    background: #f4f4f6;
+}
 
 .about{
     display: flex;
-    background-color:#ffffff;
+    background-color:#f1faee;
     box-shadow:2px 2px 5px 5px  rgb(214, 213, 213);
-    margin: 10px auto 20px auto;
+    margin:  auto  auto;
     border-radius: 10px;
     border: 1px solid #cccccc;
     height: 300px;
@@ -137,12 +143,16 @@ section .hero{
     font-size: 14px;
     font-weight: 600;
     padding-bottom: 4px;
+    opacity: 0.9;
 
 }.about p{
     font-size: 14px;
     padding-bottom: 15px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
+    opacity: 0.8;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
 }.info{
     padding: 0 90px 0 0;
 }.info .btn3{
@@ -153,7 +163,8 @@ section .hero{
     font-size: 12px;
     border-radius: 2px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
 
 
 }.info .btn4{
@@ -166,8 +177,21 @@ section .hero{
     border-radius: 2px;
     text-decoration: none;
     margin-left: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
 
+}.btn3:hover{
+    background: #ffffff;
+    color: black;
+    opacity: 0.9;
+    font-weight: 700;
+    border: 2px solid black;
+}.btn4:hover{
+    background: #ffffff;
+    color: black;
+    opacity: 0.9;
+    font-weight: 700;
+    border: 2px solid black;
 }.social-icons{
     right: 0;
     bottom: 0;
@@ -185,9 +209,12 @@ section .hero{
 }a{
     text-decoration: none;
     color: black;
+} #project{
+    background: #f5f7f6;
+
 }
 .services{
-    margin: 10px auto 10px auto ;
+    margin:  auto  auto ;
     width: 80%;
     padding-top: 10px;
 }.services .para {
@@ -205,7 +232,10 @@ section .hero{
     font-family: sans-serif;
 
 }.para p{
-    color: rgb(34, 34, 34);
+    color: rgb(34, 34, 34);    
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+
 }#btn::after button{
     display: none;
 }
@@ -238,6 +268,8 @@ section .hero{
 
 }.readmore{
     padding-top: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+
 }.box1  a{
     font-size: 25px;
     margin: 20px 0 10px 0px;
@@ -271,6 +303,8 @@ section .hero{
 }.box1 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
+    font-family: 'Nunito Sans', sans-serif;
+
 }.box1 button{
     margin-top: 25px;
     padding: 0;
@@ -310,6 +344,8 @@ section .hero{
 }.box2 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
+    font-family: 'Nunito Sans', sans-serif;
+
 }.box2 button{
     margin-top: 25px;
     padding: 0;
@@ -346,6 +382,8 @@ section .hero{
 }.box3 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
+    font-family: 'Nunito Sans', sans-serif;
+
 }.box3 button{
     margin-top: 25px;
     padding: 0;
@@ -384,6 +422,8 @@ section .hero{
 }.box4 p{
     margin-top: 8px;
     color: rgb(221, 219, 219);
+    font-family: 'Nunito Sans', sans-serif;
+
 }.box4 button{
     margin-top: 25px;
     padding: 0;
@@ -405,9 +445,10 @@ footer {
     text-align: center;
     height: 220px;
     border-top: 1px solid black;
+    background: #1b263b;
 }
 footer h1{
-    padding-top: 30px;font-size: 26px;color: black;
+    padding-top: 30px;font-size: 26px;color: rgb(229, 226, 226);
     font-family: sans-serif;
 }footer p{
     font-size: 16px;
@@ -505,7 +546,7 @@ nav{
     visibility: visible;
 }.bar-icon .fas{
     font-size: 22px;
-    color: #615d5d;
+    color: #fff;
     cursor: pointer;
 }
 .hero{
