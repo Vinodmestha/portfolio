@@ -67,7 +67,7 @@ section .hero{
     padding-bottom: 4px;   
 }
 
-    .headname{
+.headname{
     color: rgb(36, 35, 35);
     font-size: xx-large;
     text-transform: uppercase;
@@ -110,27 +110,24 @@ section .hero{
 }
 #about{
     background: #f4f4f6;
+    padding: 40px 0;
 }
 
 .about{
     display: flex;
     background-color:#f1faee;
     box-shadow:2px 2px 5px 5px  rgb(214, 213, 213);
-    margin:  auto  auto;
+    padding:  20px  auto;
     border-radius: 10px;
     border: 1px solid #cccccc;
     height: 300px;
     align-items: center;
     width: 80%;
+    margin: auto;
 
 
-} .img1{
-    width: 220px;
-    margin-left: 25px;
-    border-radius: 150px;
-    height:220px;
 
-}.info{
+} .info{
     margin: 0 50px;
 }.about h2{
     font-family: sans-serif;
@@ -155,31 +152,6 @@ section .hero{
     font-family: 'Nunito Sans', sans-serif;
 }.info{
     padding: 0 90px 0 0;
-}.info .btn3{
-    padding: 10px 33px ;
-    background-color: black;
-    border: none;outline: none;
-    color: #ffffff;
-    font-size: 12px;
-    border-radius: 2px;
-    text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 600;
-
-
-}.info .btn4{
-    padding: 10px 21px ;
-    background-color: black;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    font-size: 12px;
-    border-radius: 2px;
-    text-decoration: none;
-    margin-left: 5px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 600;
-
 }.btn3:hover{
     background: #ffffff;
     color: black;
@@ -219,19 +191,15 @@ section .hero{
     padding-top: 10px;
 }.services .para {
     width: 530px;
-    height: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     padding-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
 
 
 }.para h2{
     font-family: sans-serif;
-}.para h3{
-    padding: 9px 0;
-    font-family: sans-serif;
-
-}.para p{
+}
+.para p{
     color: rgb(34, 34, 34);    
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
@@ -240,16 +208,17 @@ section .hero{
     display: none;
 }
 .box-1{
-    display: flex; color: #ffffff;
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    color: #ffffff;
     padding-bottom: 40px ;
-    justify-content: space-between;
     max-width: 100%;
 }
 .box1{
-    height: 350px;
-    width: 25%;
+   
     text-align: center;
-    padding: 60px 20px  ;
+    padding: 40px 20px  ;
     border-radius: 5px;
     font-family: "Archivo Black", sans-serif;
     background: black;
@@ -267,7 +236,7 @@ section .hero{
     color: black;
 
 }.readmore{
-    padding-top: 15px;
+    padding:6px 15px;
     font-family: 'Nunito Sans', sans-serif;
 
 }.box1  a{
@@ -307,126 +276,16 @@ section .hero{
 
 }.box1 button{
     margin-top: 25px;
-    padding: 0;
+    padding: 6px 10px;
+    cursor: pointer;
 }.box1 .readmore{
     color: white;
 }.box2{
     background: black;
-    height: 350px;
-    width: 25%;
     text-align: center;
-    padding: 60px 20px  ;
+    padding: 640px 20px  ;
     border-radius: 5px;
     font-family: "Archivo Black", sans-serif;
-
-
-}.box2 .spanli{
-    background: #ffffff;
-    font-size: 19px;
-    width: 20px;
-    height: 20px;
-    padding: 7px 12px; 
-    border-radius: 30px;
-    text-align: center;
-    margin-top: 5px;
-    color: black;
-
-} .box2 a{
-    margin-top: 25px;
-    font-size: 25px;
-    color: skyblue;
-    display: block;
-    font-family: cursive;
-    text-align: center;
-
-}.box2 a:hover{
-    color: rgb(238, 115, 115);
-}.box2 p{
-    margin-top: 8px;
-    color: rgb(221, 219, 219);
-    font-family: 'Nunito Sans', sans-serif;
-
-}.box2 button{
-    margin-top: 25px;
-    padding: 0;
-
-}
-.box3{
-    background-color: black;
-    height: 350px;
-    width: 25%;
-    text-align: center;
-    padding: 60px 20px  ;
-    border-radius: 5px;
-    font-family: "Archivo Black", sans-serif;
-
-}.box3 .spanli{
-    background: #ffffff;
-    font-size: 19px;
-    width: 20px;
-    height: 20px;
-    padding: 7px 12px; 
-    border-radius: 30px;
-    text-align: center;
-    margin-top: 5px;
-    color: black;
-
-}.box3 a{
-    margin-top: 25px;
-    font-size: 25px;
-    display: block;
-    color: skyblue;
-    font-family: cursive;
-}.box3 a:hover{
-    color: rgb(238, 115, 115);
-}.box3 p{
-    margin-top: 8px;
-    color: rgb(221, 219, 219);
-    font-family: 'Nunito Sans', sans-serif;
-
-}.box3 button{
-    margin-top: 25px;
-    padding: 0;
-}.box-2{
-    display: flex; color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px ;
-}
-.box4{
-    background-color: black;
-    height: 350px;
-    width: 100%;
-    text-align: center;
-    padding: 60px 20px  ;
-    border-radius: 5px;
-}.box4 .spanli{
-    background: #ffffff;
-    font-size: 19px;
-    width: 20px;
-    height: 20px;
-    padding: 7px 12px; 
-    border-radius: 30px;
-    text-align: center;
-    margin-top: 5px;
-    color: black;
-
-}.box4 a{
-    margin-top: 25px;
-    font-size: 25px;
-    display: block;
-    color: skyblue;
-    font-family: cursive;
-}.box4 a:hover{
-    color: rgb(238, 115, 115);
-}.box4 p{
-    margin-top: 8px;
-    color: rgb(221, 219, 219);
-    font-family: 'Nunito Sans', sans-serif;
-
-}.box4 button{
-    margin-top: 25px;
-    padding: 0;
 }
 
 .project-info{
